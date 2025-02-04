@@ -1,21 +1,10 @@
-//
-//  ContentView.swift
-//  calculetar
-//
-//  Created by sanjeevan on 31/01/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        Link("Likitha", destination: URL(string: "https://www.apple.com")!)
+            .font(.title)
+            .foregroundColor(.blue)
     }
 }
 
