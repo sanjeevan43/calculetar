@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "google.png",
+      "filename" : "Machu_Picchu.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "google@2x.png",
+      "filename" : "Machu_Picchu@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "google@2x 1.png",
+      "filename" : "Machu_Picchu@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

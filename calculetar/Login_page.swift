@@ -1,17 +1,14 @@
 import SwiftUI
-
 struct Login_page: View {
     @State private var email = ""
     @State private var password = ""
     @State private var buttonClicked = false
-    
     var body: some View {
         NavigationView {
             ZStack {
                 Image("movie")
                     .resizable()
-                    .edgesIgnoringSafeArea(.all)
-                
+                    .edgesIgnoringSafeArea(.all)                
                 VStack {
                     Text("welcome to")
                         .font(.system(size: 65))
@@ -19,14 +16,14 @@ struct Login_page: View {
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.trailing)
                         .padding()
-                        .offset(x: -20, y: -300)
+                        .offset(x: -20, y: 0)
                     
                     Text("movie king")
                         .font(.system(size: 65))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                         .padding()
-                        .offset(x: 45, y: -250)
+                        .offset(x: 45, y: -30)
                     
                     VStack {
                         Text("login your ID")
