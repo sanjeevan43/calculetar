@@ -1,5 +1,4 @@
 import SwiftUI
-
 enum WorldWondersLink: String, CaseIterable {
     case Taj_Mahal = "Taj Mahal"
     case Great_Wall_of_China = "Great Wall of China"
@@ -9,7 +8,6 @@ enum WorldWondersLink: String, CaseIterable {
     case Colosseum = "Colosseum"
     case Christ_the_Redeemer = "Christ the Redeemer"
 }
-
 struct WondersViewLink: View {
     let array: [String] = ["Taj Mahal", "Great Wall of China", "pyramid", "Chichén Itzá", "Machu Picchu", "Colosseum", "Christ the Redeemer"]
     let link: [String] = [
@@ -21,10 +19,8 @@ struct WondersViewLink: View {
         "https://www.rome.net/colosseum",
         "https://world.new7wonders.com/wonders/cristo-redentor-1931-rio-de-janeiro-brazil/"
     ]
-
     @State private var selectedWonder: WorldWondersLink = .Taj_Mahal
     @State private var isPressed = false
-
     var body: some View {
         ScrollView(.horizontal) {
             VStack {
