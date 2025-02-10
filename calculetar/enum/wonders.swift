@@ -11,32 +11,10 @@ enum WorldWonders: String, CaseIterable {
 }
 
 struct WondersView: View {
-    let array: [String] = ["Taj_Mahal", "Great_Wall_of_China", "pyramid", "Chichén_Itzá", "Machu_Picchu", "Colosseum", "Christ_the_Redeemer"]
-    
     @State private var isAnimating = false
     @State private var selectedWonder: WorldWonders = .Taj_Mahal
     
     var body: some View {
-        ScrollView(.horizontal) {
-            VStack {
-                HStack {
-                    ForEach(array, id: \.self) { i in
-                        Button(action: {
-                            if let wonder = WorldWonders(rawValue: i.replacingOccurrences(of: "_", with: " ")) {
-                                selectedWonder = wonder
-                            }
-                        }) {
-                            Image(i)
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(.white)
-                                .background(Color.gray.opacity(0.3))
-                                .cornerRadius(10)
-                        }
-                    }
-                }
-            }
-        }
 
         VStack {
             if selectedWonder == .Taj_Mahal {
@@ -113,9 +91,9 @@ struct WondersView: View {
                     .frame(width: 300, height: 300)
                     .opacity(isAnimating ? 1 : 0)
                     .animation(.easeInOut(duration: 1.0), value: isAnimating)
-                Text("Christ the Redeemer")
                     .font(.headline)
                     .opacity(isAnimating ? 1 : 0)
+                Text("Christ the Redeemer")
                     .animation(.easeInOut(duration: 1.0).delay(0.3), value: isAnimating)
             }
         }

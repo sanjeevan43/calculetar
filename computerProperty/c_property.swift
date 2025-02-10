@@ -24,7 +24,7 @@ struct CompoundInterest: View {
                 VStack(spacing: 15) {
                     inputField("Principal", $principal)
                     inputField("Rate (%)", $rate)
-                    inputField("Time", $time)
+                    inputField("Time (yrs)", $time)
                     
                     HStack(spacing: 20) {
                         Button(action: calculateAmount) {
@@ -99,7 +99,7 @@ struct CompoundInterest: View {
                 .fontWeight(.bold)
                 .foregroundColor(.white)
             Spacer()
-            Text("\(value, specifier: "%.2f")")
+            Text("\(value, specifier: "%f")")
                 .font(.title2)
                 .fontWeight(.semibold)
                 .foregroundColor(.white)
