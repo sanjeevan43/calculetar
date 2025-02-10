@@ -11,6 +11,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		42461E642D58DFB200184B67 /* computerProperty */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = computerProperty;
+			sourceTree = "<group>";
+		};
 		4255DF212D4D26DE00A21A7A /* calculetar */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = calculetar;
@@ -34,6 +39,7 @@
 			children = (
 				4255DF212D4D26DE00A21A7A /* calculetar */,
 				4255DF202D4D26DE00A21A7A /* Products */,
+				42461E642D58DFB200184B67 /* computerProperty */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +67,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				42461E642D58DFB200184B67 /* computerProperty */,
 				4255DF212D4D26DE00A21A7A /* calculetar */,
 			);
 			name = calculetar;
