@@ -11,6 +11,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		420B0AB52D5B9A3800CDFB01 /* TicTacToa */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TicTacToa;
+			sourceTree = "<group>";
+		};
+		421DCC492D5CF22F005D0DD3 /* Test3 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Test3;
+			sourceTree = "<group>";
+		};
 		42461E642D58DFB200184B67 /* computerProperty */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = computerProperty;
@@ -19,6 +29,11 @@
 		4255DF212D4D26DE00A21A7A /* calculetar */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = calculetar;
+			sourceTree = "<group>";
+		};
+		4264B6512D6068E1007B3923 /* unicode */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = unicode;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -40,6 +55,9 @@
 				4255DF212D4D26DE00A21A7A /* calculetar */,
 				4255DF202D4D26DE00A21A7A /* Products */,
 				42461E642D58DFB200184B67 /* computerProperty */,
+				420B0AB52D5B9A3800CDFB01 /* TicTacToa */,
+				421DCC492D5CF22F005D0DD3 /* Test3 */,
+				4264B6512D6068E1007B3923 /* unicode */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +85,11 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				420B0AB52D5B9A3800CDFB01 /* TicTacToa */,
+				421DCC492D5CF22F005D0DD3 /* Test3 */,
 				42461E642D58DFB200184B67 /* computerProperty */,
 				4255DF212D4D26DE00A21A7A /* calculetar */,
+				4264B6512D6068E1007B3923 /* unicode */,
 			);
 			name = calculetar;
 			packageProductDependencies = (

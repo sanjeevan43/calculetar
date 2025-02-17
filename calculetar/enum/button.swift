@@ -1,5 +1,4 @@
 import SwiftUI
-
 enum worldWonders: String, CaseIterable {
     case Taj_Mahal = "Taj Mahal"
     case Great_Wall_of_China = "Great Wall of China"
@@ -9,14 +8,10 @@ enum worldWonders: String, CaseIterable {
     case Colosseum = "Colosseum"
     case Christ_the_Redeemer = "Christ the Redeemer"
 }
-
 struct wondersView: View {
     let array: [String] = ["Taj Mahal", "Great Wall of China", "pyramid", "Chichén Itzá", "Machu Picchu", "Colosseum", "Christ the Redeemer"]
-    
     @State private var selectedWonder: WorldWonders = .Taj_Mahal
-
     @State private var isPressed = false
-    
     var body: some View {
         ScrollView(.horizontal) {
             VStack {
@@ -38,7 +33,6 @@ struct wondersView: View {
                 }
             }
         }
-
         VStack {
             ForEach(array, id: \.self) { wonder in
                 if selectedWonder.rawValue == wonder {
@@ -51,16 +45,12 @@ struct wondersView: View {
                         .animation(.easeInOut(duration: 2), value: isPressed)
                     Text(wonder)
                         .font(.headline)
-                       
+                    
                 }
             }
         }
-       
-            
-      
     }
 }
-
 #Preview {
     wondersView()
 }

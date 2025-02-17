@@ -11,7 +11,7 @@ import SwiftUI
 struct calculetarApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            wondersViewURL()
         }
     }
 }

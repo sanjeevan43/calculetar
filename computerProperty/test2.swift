@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CompoundInterest: View {
+struct compoundInterest: View {
     @State private var principal: String = ""
     @State private var rate: String = ""
     @State private var time: String = ""
@@ -47,8 +47,7 @@ struct CompoundInterest: View {
                                 .cornerRadius(15)
                         }
                     }
-            
-
+                    
                     infoBox("Amount", amount, .red)
                     infoBox("Interest", interest, .black)
                 }
@@ -62,10 +61,27 @@ struct CompoundInterest: View {
         let p = Double(principal) ?? 0
         let r = Double(rate) ?? 0
         let t = Double(time) ?? 0
-        
-        amount = p * pow((1 + r / 100), t)
+        var a = 10
+        var b = 10
+        var amount : Double{
+            a+=20
+            return p * pow((1 + r / 100), t) + Double(a)
+        }
         interest = amount - p
     }
+    
+//    private func calculateAmount() {
+//        let p = Double(principal) ?? 0
+//        let r = Double(rate) ?? 0
+//        let t = Double(time) ?? 0
+//        var a = 10
+//        var b = 10
+//        a += 20
+//        amount = p * pow((1 + r / 100), t) + Double(a)
+//        interest = amount - p
+//    }
+
+    
     
     private func resetFields() {
         principal = ""
@@ -106,7 +122,7 @@ struct CompoundInterest: View {
                 .foregroundColor(.white)
         }
         .padding()
-        .frame(width: 280, height: 50)
+        .frame(width: 380, height: 50)
         .background(color)
         .cornerRadius(15)
         .shadow(color: color.opacity(0.7), radius: 5, x: 0, y: 5)
@@ -114,5 +130,5 @@ struct CompoundInterest: View {
 }
 
 #Preview {
-    CompoundInterest()
+    compoundInterest()
 }
